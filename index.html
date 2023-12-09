@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1d0089191.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>VideoPlayer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="video-content">
+            <video src="./video.mp4"></video>
+        </div>
+        <div class="video-controls">
+            <div class="progres-bar">
+                <input type="range" class="timing" value="0" step="0.001">
+                <span class="watch-time">00:00 / 00:00</span>
+            </div>
+            <div class="controls">
+                <div class="buttons">
+                    <i class="fa-regular btn"></i>
+                    <i class="fa-solid fa-volume-xmark"></i>
+                    <i class="fa-solid fa-expand"></i>
+                </div>
+                <input type="range" class="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
